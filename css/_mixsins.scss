@@ -1,0 +1,68 @@
+@mixin center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flex {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+@mixin positionSet($position, $top: unset, $left: unset, $right: unset, $bottom: unset) {
+    position: $position;
+    top: $top;
+    left: $left;
+    right: $right;
+    bottom: $bottom;
+}
+
+@mixin btnSet($border: unset, $border-radius, $background, $color){
+    border: $border;
+    border-radius: $border-radius;
+    background: $background;
+    color: $color;
+}
+
+@mixin textMockup {
+    background: rgba(32, 72, 79, 0.1);
+    border-radius: 12px;
+}
+
+@mixin listMarker {
+    content: '\f00c';
+    font-family: FontAwesome;
+    background: $PrimaryLight;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    font-size: 8px;
+    margin-right: 10px;
+}
+
+@mixin transition {
+    transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+}
+
+@mixin backgroundImg {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+@mixin btn {
+    border-radius: 8px;
+    border: none;
+    font-weight: 400;
+    padding: 16px 36px;
+}
+
+@mixin bgImg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
